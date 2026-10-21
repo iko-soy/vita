@@ -1,0 +1,63 @@
+{
+  "nodes": {
+    "landscape": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1781809004,
+        "narHash": "sha256-jRsjR0oOcXFWOZZwNg7Fi946IxuYGUrktNcF/aZIHz4=",
+        "owner": "tloncorp",
+        "repo": "landscape",
+        "rev": "46c6ed8738082b6a94558710b1e3619befa83057",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tloncorp",
+        "repo": "landscape",
+        "rev": "46c6ed8738082b6a94558710b1e3619befa83057",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1792502884,
+        "narHash": "sha256-IoNisKcGbUjdd45qCqywGMCYmZ5EnkxezvLII0FWwNA=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "02c087f3fe673c9e317f206a627cb6b910336dbe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "landscape": "landscape",
+        "nixpkgs": "nixpkgs",
+        "urbit": "urbit"
+      }
+    },
+    "urbit": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1785851358,
+        "narHash": "sha256-eHoGwqirk7zMpOn/y8dKqozz5IiQ7nqek/ypxIOaRiU=",
+        "owner": "urbit",
+        "repo": "urbit",
+        "rev": "5a187fededc4582a34fcd6055c67bb63e0917b94",
+        "type": "github"
+      },
+      "original": {
+        "owner": "urbit",
+        "ref": "408k-2",
+        "repo": "urbit",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
