@@ -296,6 +296,10 @@
   .^((set ship) %cs /[(scot %p our.bowl)]/[desk]/[(scot %da now.bowl)]/subs)
 ::
 ++  scry-treaty-alliance
+  ^-  update:alliance:tt
+  :: %treaty is part of %landscape, which may not be running
+  ?.  .^(? %gu /[(scot %p our.bowl)]/treaty/[(scot %da now.bowl)]/$)
+    [%ini ~]
   .^(update:alliance:tt %gx /[(scot %p our.bowl)]/treaty/[(scot %da now.bowl)]/alliance/noun)
 ::
 ++  put-downloads

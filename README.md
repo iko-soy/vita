@@ -4,6 +4,8 @@
 
 keep track of your app distributions
 
+this is a fork of [assemblycapital/vita](https://github.com/assemblycapital/vita), updated for kernel 408 and published from ~donmec-sallud. see [changes](#changes) for what differs from upstream.
+
 to get downloads, `:vita` periodically scrys %cs /subs for each desk and caches the results.
 
 `:vita` accepts foreign pokes attesting to activity on a desk.
@@ -114,7 +116,7 @@ desks created with `:vita-deploy` start with a glob hosted on your own ship; upl
 # requirements
 
 - kernel: `[%zuse 408]`
-- `%landscape`: `:vita` and `:vita-deploy` scry and poke `%treaty`, and `%docket` serves the frontend.
+- `%landscape` (recommended): `%docket` serves the frontend, and `%treaty` provides the list of published desks and handles publishing from `:vita-deploy`. without it, `:vita` still collects metrics on desks registered with `:vita|g %desk`.
 
 # installation
 
@@ -147,7 +149,7 @@ then publish with `:treaty|publish %vita`.
 
 # changes
 
-changes since the 411K release:
+changes from upstream [assemblycapital/vita](https://github.com/assemblycapital/vita) (last released for 411K from ~nodmyn-dosrux):
 
 - **kernel 408.** `sys.kelvin` is now `[%zuse 408]` (urbit 408k-2). the kernel interfaces vita uses (clay `%cs /subs` and `%cd` scries, behn timers, hood `%kiln-install`/`%helm-pass`, spider threads, docket and treaty types) are unchanged, so no agent code changes were needed. support for 413–411 was dropped, since the bundled libraries are now the 408 ones.
 - **nix flake.** `nix build` builds the installable desk and `nix build .#glob` builds the frontend, replacing the manual "copy in app dependencies" step.
@@ -157,4 +159,4 @@ changes since the 411K release:
 
 ## urbit.org grant
 
-https://urbit.org/grants/app-metrics
+the original vita was funded by the urbit.org grant https://urbit.org/grants/app-metrics

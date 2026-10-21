@@ -56,7 +56,7 @@ export function Metrics() {
       </div>
         <p>
           Activity collection requires backend integration with your app.
-          For more info, check out the <a href="https://github.com/assemblycapital/vita">github repo</a> and/or contact ~bacwyl-samweg.
+          For more info, check out the <a href="https://github.com/iko-soy/vita">github repo</a> and/or contact ~donmec-sallud.
         </p>
       <hr />
       <div>

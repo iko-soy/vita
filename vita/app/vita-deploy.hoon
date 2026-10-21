@@ -160,5 +160,9 @@
   ^-  card
   (~(poke-self pass:io /self-poke/get-desks) vita-deploy-action+!>([%get-desks ~]))
 ++  scry-treaty-alliance
+  ^-  update:alliance:tt
+  :: %treaty is part of %landscape, which may not be running
+  ?.  .^(? %gu /[(scot %p our.bowl)]/treaty/[(scot %da now.bowl)]/$)
+    [%ini ~]
   .^(update:alliance:tt %gx /[(scot %p our.bowl)]/treaty/[(scot %da now.bowl)]/alliance/noun)
 --
