@@ -45,7 +45,7 @@
     |^  =;  paz
           :_  (turn paz mage)
           :+  /desk/docket-0  %docket-0
-          (default-docket desk)
+          (default-docket our desk)
       ::
         ^-  (list path)
         :~
@@ -85,17 +85,18 @@
   --
 :: ::
 ++  default-glob-reference
+  :: served by our own %docket; awaits a manual upload,
+  :: which sets the real hash
+  |=  our=@p
   ^-  glob-reference:docket-sur
-  :-  0vsckvo.mrm5r.fl3kl.gtfdo.05mcb
-  :-  %http
-  'https://bwyl.nyc3.digitaloceanspaces.com/vita/example-app-globs/example-1-0vsckvo.mrm5r.fl3kl.gtfdo.05mcb.glob'
+  [0v0 %ames our]
 ::
 ++  default-docket
-  |=  desk-name=@tas
+  |=  [our=@p desk-name=@tas]
   =|  d=docket:docket-sur
   =.  title.d  desk-name
   =.  href.d
-    [%glob desk-name default-glob-reference]
+    [%glob desk-name (default-glob-reference our)]
   d
 ::
 ++  enjs
