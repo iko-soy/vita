@@ -36,7 +36,7 @@
           pname = "vita-glob";
           version = "2.0.0";
           src = ./frontend;
-          npmDepsHash = pkgs.lib.fakeHash;
+          npmDepsHash = "sha256-9Rrf7YL6Ucrr7Q8APWa/bM2tgd+SSbmjxFNCTSj7q5E=";
           installPhase = ''
             runHook preInstall
             cp -r dist $out
