@@ -124,6 +124,8 @@ desks created with `:vita-deploy` start with a glob hosted on your own ship; upl
 
 `|install ~donmec-sallud %vita`
 
+[shelf.iko.soy](https://shelf.iko.soy) lists all the apps ~donmec-sallud offers.
+
 ## install from source
 
 the desk is built with nix. `nix build` produces the complete desk in `./result`: the `vita/` sources plus their dependencies (`base-dev` from urbit `408k-2`, and docket/treaty from `%landscape`), pinned in `flake.lock`.
